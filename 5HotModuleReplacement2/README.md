@@ -4,4 +4,12 @@
 
 但在热重载中，文件是不存放在硬盘上的，而是使用了memory-fs模块存放在内存中的，因此原始规则不能使用了。
 查看与webpack-dev-middleware配合需要使用到webpack-hot-middleware，
-在内存中使用时需要为入口文件添加一个'webpack-hot-middleware/client'，
+在内存中使用时需要为入口文件添加一个'webpack-hot-middleware/client'
+
+
+
+特别注意 : publicPath: '/'
+打包成功后的文件路径 ,以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+
+如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
+会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js
