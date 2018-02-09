@@ -26,8 +26,8 @@
 当更新 CSS 依赖模块时，此 loader 在后台使用 module.hot.accept 来修补(patch) <style> 标签。
 
 
- 特别注意 :
- (1)path:path.resolve(__dirname, 'dist')是控制打包成功后文件   存放   的路径,
- (2)publicPath:
-  a, 会影响打包成功后文件  访问   路径 , 例如 '/'  以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
-  b, 如果用npm run build 直接打包 publicPath 会影响 index.html里引用app.bundle.js的路径
+  特别注意 :
+  (1)path:是控制打包成功后文件   存放   的路径,
+  (2)publicPath:能帮助你为项目中的所有资源指定一个基础路径.
+   a, 会影响打包成功后文件  访问   路径 , 例如 '/'  以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+   b, 如果用npm run build 直接打包 publicPath 会影响 index.html里引用app.bundle.js的路径
