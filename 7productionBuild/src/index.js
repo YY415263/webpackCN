@@ -4,6 +4,11 @@
 
 import { cube } from './math.js';
 
+
+if (process.env.NODE_ENV !== 'production') {
+       alert('Looks like we are in development mode!');
+}
+
 function component() {
     var element = document.createElement('pre');
 
