@@ -6,7 +6,8 @@
 
 
 
-2,UglifyJSPlugin 插件是能够删除未引用代码(dead code)的压缩工具(minifier) . 大大减少app.bundle.js 的大小 ,不使用此插件生成的文件为267K ,使用此插件生成的文件为65K
+2,UglifyJSPlugin 插件是能够删除未引用代码(dead code)的压缩工具(minifier) . 大大减少app.bundle.js 的大小 ,
+此工程为例 不使用此插件生成的文件为267K ,使用此插件生成的文件为65K
 
 
 特别注意 : publicPath: '/'
