@@ -3,6 +3,7 @@
  */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ClearWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const webpack = require('webpack');
@@ -26,15 +27,17 @@ module.exports = {
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),//打包js的名字
-        publicPath: '/'
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: ''
     },
     plugins:[
         new HtmlWebpackPlugin({
             title:'tree shaking'
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new ClearWebpackPlugin(['dist']),
         new UglifyJSPlugin()
+
     ]
 }
 //new UglifyJSPlugin()
