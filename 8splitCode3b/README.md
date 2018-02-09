@@ -15,7 +15,7 @@
 第一种，也是优先选择的方式是，使用符合 ECMAScript 提案 的 import() 语法。
 第二种，则是使用 webpack 特定的 require.ensure。
 
-此项目用的是第二种
+此项目用的是第二种   详情请查看此链接 http://cnodejs.org/topic/586823335eac96bb04d3e305
 
 特别注意
  import它接收一个 path参数，指的是该子模块对于的路径，同时还注意到其中可以添加一行注释
