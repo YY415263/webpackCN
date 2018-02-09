@@ -18,7 +18,7 @@
 然后将这些文件放置在 /dist 文件夹中，但是 webpack 无法追踪到哪些文件是实际在项目中用到的。
 通常，在每次构建前清理 /dist 文件夹，是比较推荐的做法，因此只会生成用到的文件。让我们完成这个需求。
 clean-webpack-plugin 是一个比较普及的管理插件
-(webpack 打包的时候dist文件会显示在硬盘上，如果是web-dev-server或者webpack-dev-middleware
+(webpack 打包的时候dist文件才会显示在硬盘上，如果是web-dev-server或者webpack-dev-middleware
 生成的index.html bundle.js 只是在内存中)
 
 
