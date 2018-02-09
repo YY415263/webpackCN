@@ -33,3 +33,10 @@ webpack-dev-middleware 需要有 express server  配合 。
 
 
 
+特别注意 : publicPath: '/'
+打包成功后的文件路径 ,以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+
+如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
+会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js
+
+
