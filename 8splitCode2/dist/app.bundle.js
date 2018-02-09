@@ -1,0 +1,2 @@
+webpackJsonp([0],[,function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t(2),u=t(0),o=t.n(u);function r(){var e=document.createElement("pre");return e.innerHTML=o.a.join(["Hello","webpack!","5 cubed is equal to "+Object(c.a)(5)],"\n\n"),e}let a=r();document.body.appendChild(a)},function(e,n,t){"use strict";n.a=function(e){return e*e*e}}],[1]);
+//# sourceMappingURL=app.bundle.js.map
