@@ -10,3 +10,6 @@
 
 如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
 会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js
+
+
+3,UglifyJSPlugin 插件大大减少app.bundle.js 的大小 ,不使用此插件生成的文件为267K ,使用此插件生成的文件为65K

@@ -37,3 +37,4 @@ module.exports = {
         new UglifyJSPlugin()
     ]
 }
+//new UglifyJSPlugin()
