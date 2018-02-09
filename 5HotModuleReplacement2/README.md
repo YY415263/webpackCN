@@ -7,9 +7,12 @@
 在内存中使用时需要为入口文件添加一个'webpack-hot-middleware/client'
 
 
+2,因为webpack-dev-middleware 和 express 结合可以更加自由的配置服务,所以后面的项目都以这种方式建立.
+
 
  特别注意 :
  (1)path:path.resolve(__dirname, 'dist')是控制打包成功后文件   存放   的路径,
  (2)publicPath:
   a, 会影响打包成功后文件  访问   路径 , 例如 '/'  以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
   b, 如果用npm run build 直接打包 publicPath 会影响 index.html里引用app.bundle.js的路径
+
