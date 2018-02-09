@@ -17,3 +17,11 @@ npm install --save-dev file-loader
 4,此外，可以加载的有用资源还有数据，如 JSON 文件，CSV、TSV 和 XML。类似于 NodeJS，JSON 支持实际上是内置的，
 也就是说 import Data from './data.json'
  默认将正常运行。要导入 CSV、TSV 和 XML，你可以使用 csv-loader 和 xml-loader。
+
+
+
+ 特别注意 : path:path.resolve(__dirname, 'dist')是控制打包成功后文件   存放   的路径, publicPath: '/' 是控制
+ 打包成功后文件  访问   路径 ,以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+
+ 如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
+ 会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js

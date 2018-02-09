@@ -34,3 +34,11 @@ clean-webpack-plugin 是一个比较普及的管理插件
 当完成打包并发送到浏览器时，会在运行时通过 Manifest 来解析和加载模块。无论你选择哪种模块语法，
 那些 import 或 require 语句现在都已经转换为 __webpack_require__ 方法，此方法指向模块标识符(module identifier)。
 通过使用 manifest 中的数据，runtime 将能够查询模块标识符，检索出背后对应的模块。
+
+
+
+特别注意 : path:path.resolve(__dirname, 'dist')是控制打包成功后文件   存放   的路径, publicPath: '/' 是控制
+打包成功后文件  访问   路径 ,以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+
+如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
+会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js

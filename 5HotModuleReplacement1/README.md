@@ -24,3 +24,10 @@
 
 6,借助于 style-loader 的帮助，CSS 的模块热替换实际上是相当简单的。
 当更新 CSS 依赖模块时，此 loader 在后台使用 module.hot.accept 来修补(patch) <style> 标签。
+
+
+特别注意 : path:path.resolve(__dirname, 'dist')是控制打包成功后文件   存放   的路径, publicPath: '/' 是控制
+打包成功后文件  访问   路径 ,以确保文件资源能够在 http://localhost:3000 下正确访问 (http://localhost:3000/index.html)
+
+如果用npm run build 直接打包,这个需要去掉,如果没有去掉生成的html里引用的app.bundle.js
+会是 http://localhost:7001/app.bundle.js(我用的是webStorm,端口默认是7001),这样会导致index.html访问不到 app.bundle.js
