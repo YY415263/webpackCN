@@ -49,6 +49,7 @@
  })
 
  特别注意: 引入顺序在这里很重要。CommonsChunkPlugin 的 'vendor' 实例，必须在 'manifest' 实例之前引入。
+ 否则会报错While running in normal mode it's not allowed to use a non-entry chunk (vender)
 
 
 7,(1)app bundle 会随着自身的新增内容的修改，而发生变化。
