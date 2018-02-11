@@ -24,7 +24,7 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title:'splitCode'
+            title:'lazyload'
         }),
         new ClearWebpackPlugin(['dist']),
     ]
