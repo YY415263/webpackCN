@@ -1,2 +1,0 @@
-webpackJsonp([0],{"0Wcx":function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default=(()=>{alert('Button Clicked: Here\'s "some information"!')})}});
-//# sourceMappingURL=alert.ccd65a4a71408233c052.js.map
