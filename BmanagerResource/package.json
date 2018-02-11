@@ -1,0 +1,23 @@
+{
+  "name": "starting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "csv-loader": "^2.1.1",
+    "file-loader": "^1.1.6",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
