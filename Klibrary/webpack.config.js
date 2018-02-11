@@ -12,7 +12,7 @@ module.exports = {
         libraryExport: 'default',
         library: 'webpackNumbers'
     },
-    externals: {
+    externals: {//这意味着你的 library 需要一个名为 lodash 的依赖，这个依赖在用户的环境中必须存在且可用。
         'lodash': {
             commonjs: 'lodash',
             commonjs2: 'lodash',
