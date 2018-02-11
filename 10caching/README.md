@@ -71,7 +71,7 @@
 
 特别注意:
 (1)如果用hash 每次打包后的[hash]都会改变.
-如果用[chunkhash]如果配置正确只有文件发生变化会面的chunkhash值才会变化.
+如果用[chunkhash]如果配置正确只有文件发生变化打包后js后面的chunkhash值才会变化.
 
 (2)热更新(HMR)不能和[chunkhash]同时使用。
 解决方法：如果是开发环境，将配置文件中的chunkhash 替换为hash.
