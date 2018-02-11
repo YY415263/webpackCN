@@ -1,3 +1,14 @@
+此项目在dist文件夹里 打包了一个webpack-number.js
+
+在examples文件夹里 用两种方式使用
+(1)直接在页面引用
+(2)node 直接执行
+
+
+
+
+
+
 现在，让我们以某种方式打包这个 library，能够实现以下几个目标：
 
 (1),不打包 lodash，而是使用 externals 来 require 用户加载好的 lodash。
