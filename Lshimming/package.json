@@ -1,0 +1,22 @@
+{
+  "name": "starting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "exports-loader": "^0.7.0",
+    "imports-loader": "^0.8.0",
+    "lodash": "^4.17.5",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
